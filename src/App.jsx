@@ -5,22 +5,27 @@ import Shop from "./pages/shop/shop";
 import Cart from "./pages/cart/cart";
 import { CartProvider } from "./cart-context";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+	[
+		{
+			path: "/",
+			element: <Layout />,
+			children: [
+				{
+					path: "/",
+					element: <Shop />,
+				},
+				{
+					path: "cart",
+					element: <Cart />,
+				},
+			],
+		},
+	],
 	{
-		path: "/",
-		element: <Layout />,
-		children: [
-			{
-				path: "/",
-				element: <Shop />,
-			},
-			{
-				path: "cart",
-				element: <Cart />,
-			},
-		],
+		basename: "/neostudy-testing",
 	},
-]);
+);
 
 function App() {
 	return (
