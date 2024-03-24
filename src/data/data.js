@@ -1,7 +1,7 @@
 export const headphones = [
 	{
 		id: 1,
-		img: "./assets/S852I.png",
+		img: "/assets/S852I.png",
 		title: "Apple BYZ S852I",
 		about:
 			"This is the best way to listen to music. Would you like to try some of it? Why not? Take a listen!",
@@ -11,7 +11,7 @@ export const headphones = [
 	},
 	{
 		id: 2,
-		img: "./assets/earpods1.png",
+		img: "/assets/earpods1.png",
 		title: "Apple EarPods",
 		about:
 			"This is the best way to listen to music. Would you like to try some of it? Why not? Take a listen!",
@@ -20,7 +20,7 @@ export const headphones = [
 	},
 	{
 		id: 3,
-		img: "./assets/earpods2.png",
+		img: "/assets/earpods2.png",
 		title: "Apple EarPods",
 		about:
 			"This is the best way to listen to music. Would you like to try some of it? Why not? Take a listen!",
@@ -29,7 +29,7 @@ export const headphones = [
 	},
 	{
 		id: 4,
-		img: "./assets/S852I.png",
+		img: "/assets/S852I.png",
 		title: "Apple BYZ S852I",
 		about:
 			"This is the best way to listen to music. Would you like to try some of it? Why not? Take a listen!",
@@ -38,7 +38,7 @@ export const headphones = [
 	},
 	{
 		id: 5,
-		img: "./assets/earpods1.png",
+		img: "/assets/earpods1.png",
 		title: "Apple EarPods",
 		about:
 			"This is the best way to listen to music. Would you like to try some of it? Why not? Take a listen!",
@@ -47,7 +47,7 @@ export const headphones = [
 	},
 	{
 		id: 6,
-		img: "./assets/earpods2.png",
+		img: "/assets/earpods2.png",
 		title: "Apple EarPods",
 		about:
 			"This is the best way to listen to music. Would you like to try some of it? Why not? Take a listen!",
@@ -59,7 +59,7 @@ export const headphones = [
 export const wirelessHeadphones = [
 	{
 		id: 7,
-		img: "./assets/airpods.png",
+		img: "/assets/airpods.png",
 		title: "Apple AirPods",
 		about:
 			"This is the best way to listen to music. Would you like to try some of it? Why not? Take a listen!",
@@ -68,7 +68,7 @@ export const wirelessHeadphones = [
 	},
 	{
 		id: 8,
-		img: "./assets/GH-04.png",
+		img: "/assets/GH-04.png",
 		title: "GERLAX GH-04",
 		about: "Just no",
 		price: 6527,
@@ -76,7 +76,7 @@ export const wirelessHeadphones = [
 	},
 	{
 		id: 9,
-		img: "./assets/BO4.png",
+		img: "/assets/BO4.png",
 		title: "BOROFONE BO4",
 		about: "BO4 is overpriced, so don't buy it!",
 		price: 6527,
