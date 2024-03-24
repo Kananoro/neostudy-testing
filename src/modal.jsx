@@ -15,7 +15,7 @@ class Modal extends React.Component {
 			<div className="modal" onClick={onClose}>
 				<div className="modal_content" onClick={(e) => e.stopPropagation()}>
 					<h2>О продукте {title}</h2>
-					<img src={`/neostudy-test${img}`} alt="product image" />
+					<img src={`/neostudy-testing${img}`} alt="product image" />
 					<p className="modal_about">{about}</p>
 					{firstprice !== undefined ? (
 						<>

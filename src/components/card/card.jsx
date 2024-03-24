@@ -25,7 +25,7 @@ const Card = ({
 	return (
 		<div className="card">
 			<div className="card_image" onClick={() => openModal(product)}>
-				<img src={`/neostudy-test${img}`} alt="product image" />
+				<img src={`/neostudy-testing${img}`} alt="product image" />
 			</div>
 			<div className="card_row">
 				<div className="card_title">{title}</div>

@@ -18,7 +18,7 @@ const CartItem = ({
 				<Trash />
 			</button>
 			<div className="cartitem_row">
-				<img src={`/neostudy-test${img}`} alt="" />
+				<img src={`/neostudy-testing${img}`} alt="" />
 				<div className="cartitem_info">
 					<h2>{title}</h2>
 					<p>{price}</p>
