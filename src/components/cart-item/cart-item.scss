@@ -1,0 +1,103 @@
+.cartitem {
+	position: relative;
+	width: 633px;
+	height: 218px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	border-radius: 30px;
+	padding: 21px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	// .cartitem_trash
+
+	&_trash {
+		position: absolute;
+		background: none;
+		top: 18px;
+		right: 28px;
+	}
+
+	// .cartitem_row
+
+	&_row {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 20px;
+		img {
+			height: 136px;
+		}
+	}
+
+	// .cartitem_info
+
+	&_info {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		align-self: center;
+		flex: 1 0 auto;
+		> h2 {
+			font-weight: 500;
+			font-size: 17px;
+			color: #1c1c27;
+		}
+		> p {
+			font-weight: 600;
+			font-size: 15px;
+			color: #aaa;
+			&:after {
+				content: " ₽";
+			}
+		}
+	}
+	&_price {
+	}
+
+	// .cartitem_management
+
+	&_management {
+		display: flex;
+		flex: row;
+		justify-content: space-between;
+	}
+
+	// .cartitem_quantity
+
+	&_quantity {
+		width: 118px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		button {
+			background: #ffce7f;
+			color: #fff;
+			line-height: 0;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			transition: 0.3s ease-in-out background;
+		}
+		button:hover {
+			background: #ffa542;
+			transition: 0.3s ease-in-out background;
+		}
+		label {
+			font-weight: 600;
+			font-size: 17px;
+			color: #000;
+		}
+	}
+
+	&_summary {
+		font-weight: 600;
+		font-size: 15px;
+		text-align: right;
+		color: #1c1c27;
+		&:after {
+			content: " ₽";
+		}
+	}
+}

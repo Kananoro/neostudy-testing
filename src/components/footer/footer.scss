@@ -1,0 +1,75 @@
+.footer {
+	flex: 0 0 auto;
+	width: 1110px;
+	height: 149px;
+	padding: 29px;
+	display: flex;
+	justify-content: space-between;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+	background: #fff;
+	&_logo {
+		font-weight: 700;
+		font-size: 25px;
+		color: #101010;
+		text-transform: uppercase;
+		transition: 0.3s ease transform;
+	}
+	&_logo:hover {
+		transform: rotateZ(10deg);
+		transition: 0.3s ease transform;
+	}
+	&_links {
+		display: flex;
+		flex-direction: column;
+		height: 82px;
+		justify-content: space-between;
+		a {
+			font-weight: 400;
+			font-size: 17px;
+			color: #000;
+			transition: 0.2s color;
+		}
+		a:hover {
+			color: #ffa542;
+			transition: 0.2s color;
+		}
+	}
+	&_social {
+		width: 126px;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.language {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 111px;
+	font-weight: 500;
+	font-size: 15px;
+	color: #101010;
+	label {
+		cursor: pointer;
+		transition: 0.2s color, 0.2s font-weight;
+	}
+	input {
+		position: absolute;
+		display: none;
+		cursor: pointer;
+	}
+	input[type="radio"]:checked + label {
+		font-weight: 700;
+		font-size: 15px;
+		color: #ffa542;
+		transition: 0.2s color, 0.2s font-weight;
+	}
+}
+.socialsvg path {
+	transition: 0.2s fill;
+}
+.socialsvg:hover path {
+	fill: #ffa542;
+	transition: 0.2s fill;
+}

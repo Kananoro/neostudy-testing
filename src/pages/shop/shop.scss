@@ -1,0 +1,23 @@
+.shop {
+	display: flex;
+	flex-direction: column;
+	width: 1110px;
+	// .shop_category
+
+	&_category {
+		font-weight: 600;
+		font-size: 20px;
+		color: #838383;
+		margin-bottom: 20px;
+	}
+
+	// .shop_product
+
+	&_product {
+		display: flex;
+		flex: row;
+		flex-wrap: wrap;
+		gap: 30px;
+		margin-bottom: 20px;
+	}
+}

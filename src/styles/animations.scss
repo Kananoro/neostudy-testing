@@ -1,0 +1,32 @@
+@keyframes startHeader {
+	0% {
+		transform: translateY(-300%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@keyframes logo {
+	0% {
+		transform: rotateZ(10deg);
+	}
+	100% {
+		transform: rotateZ(0deg);
+	}
+	// 100% {
+	// 	transform: rotateZ(0deg);
+	// }
+}
+
+@keyframes logoHover {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(10deg);
+	}
+	// 100% {
+	// 	transform: rotateZ(0deg);
+	// }
+}

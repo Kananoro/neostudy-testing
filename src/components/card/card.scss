@@ -1,0 +1,120 @@
+.card {
+	border-radius: 30px;
+	width: 350px;
+	height: 407px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+	background: #fff;
+	padding: 21px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	// .card_image
+
+	&_image {
+		flex: 1 1 auto;
+		align-self: center;
+		max-height: 270px;
+		cursor: pointer;
+		transition: 0.3s ease background;
+	}
+
+	&_row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&_title {
+		font-weight: 600;
+		font-size: 17px;
+		color: #1c1c27;
+	}
+
+	// .card_price
+
+	&_price {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		label:after {
+			content: " ₽";
+		}
+	}
+
+	// .card_lastprice
+
+	&_lastprice {
+		font-weight: 600;
+		font-size: 17px;
+		color: #ffa542;
+	}
+
+	// .card_firstprice
+
+	&_firstprice {
+		position: absolute;
+		bottom: -15px;
+		font-weight: 600;
+		font-size: 13px;
+		text-decoration: line-through;
+		color: #ffce7f;
+	}
+
+	// .card_rating
+
+	&_rating {
+		width: 60px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		font-weight: 600;
+		font-size: 17px;
+		color: #838383;
+	}
+
+	// .card_buy
+
+	&_buy {
+		position: relative;
+		background: none;
+		font-weight: 600;
+		font-size: 17px;
+		color: #000;
+
+		// Анимация наведения на кнопку
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			width: 0;
+			height: 1px;
+			background-color: #000000;
+			transition: width 0.3s ease, 0.3s ease background-color;
+		}
+
+		&::before {
+			left: 50%;
+		}
+
+		&::after {
+			right: 50%;
+		}
+
+		&:hover::before {
+			width: 50%;
+		}
+
+		&:hover::after {
+			width: 50%;
+		}
+	}
+	&_buy:active {
+		&::before,
+		&::after {
+			background-color: #ffa542;
+			transition: 0s cubic-bezier(0.075, 0.82, 0.165, 1) background-color;
+		}
+	}
+}
